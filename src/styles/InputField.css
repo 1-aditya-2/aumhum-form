@@ -1,0 +1,44 @@
+.input-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.input-group input {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  color: #2c3e50;
+}
+
+.input-group input:hover {
+  border-color: #bdc3c7;
+  background: #ffffff;
+}
+
+.input-group input:focus {
+  border-color: #3498db;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+.input-group:focus-within label {
+  color: #3498db;
+}
+
+.input-group input:focus {
+  animation: input-focus 0.2s ease-out forwards;
+}
